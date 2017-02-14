@@ -33,6 +33,13 @@ class Test(unittest.TestCase):
         if queen._board is not None:
             queen._board.print()
 
+    def test8(self):
+        queen = NQueen(8)
+        queen.search()
+
+        if queen._board is not None:
+            queen._board.print()
+
 
 if __name__ == '__main__':
     unittest.main()
